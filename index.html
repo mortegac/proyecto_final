@@ -3,34 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOTEL CODERHOUSE</title>
+    <title>Hotel Coderhouse</title>
     <link href="binn/css/stylehotel.css" rel="stylesheet"/> 
 
 </head>
 <body>
 
-  <!--  MODAL BUSCADOR 1-->
-  <div class="modal fade" id="miventana" style="display: none; width:100%;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-  <div class="modal-content"  style="height:600px; overflow: scroll;">
-  <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-  <!-- MODAL --><!-- fin:MODAL -->
-  </div>
-  <div class="modal-footer" style=" margin:0px;"><button type="button" class="btn btn-primary" data-dismiss="modal" >Cerrar</button></div>  
-  </div></div></div>
-  <!-- fin: MODAL BUSCADOR -->
-
-
-
+<!--  MODAL BUSCADOR 1-->
+<div class="modal fade" id="miventana" style="display: none; width:100%;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+<div class="modal-content"  style="height:600px; overflow: scroll;">
+    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <!-- MODAL --><!-- fin:MODAL -->
+    </div>
+ <div class="modal-footer" style=" margin:0px;"><button type="button" class="btn btn-primary" data-dismiss="modal" >Cerrar</button></div>  
+</div></div></div>
+<!-- fin: MODAL BUSCADOR -->
 
 
 
 <div id="wrapper">
 
-<!--inicio: MENU TOP -->
+<!--inicio: MENU TOP   data-target=".navbar-ex1-collapse"  data-target="#bs-example-navbar-collapse-2"-->
 <nav class="navbar navbar-fixed-top navbarDEGRADADO" role="navigation">
 <!--inicio: navbar-header --> 
- <div class="navbar-header"> <a class="navbar-brand" href="#"><img class="imgLogo" src="binn/images/logoPeq.png" width="177" height="51" longdesc="HOTEL-CODERHOUSE"></a>
+ <div class="navbar-header"> 
+
+   <a class="navbar-brand" href="#">
+      <img class="imgLogo" src="binn/images/logohotel.png" longdesc="HOTEL-CODERHOUSE">
+   </a>
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
       <span class="sr-only">Menu</span>
       <span class="icon-bar"><i class="fa fa-bars"></i></span>
@@ -51,9 +52,9 @@
 
         <!--inicio: SUB MENU--><ul class="dropdown-menu dropdown-alerts">
        <li class="divider"></li>   
-              <li><a href="#" data-scroll-nav="0"><i class="#"></i>HABITACIONES UNO</a></li>  
-              <li><a href="#" data-scroll-nav="1"><i class="#"></i>HABITACIONES DOS</a></li> 
-              <li><a href="#" data-scroll-nav="2"><i class="#"></i>HABITACIONES TRES</a></li> 
+              <li><a href="#"><i class="#"></i>HABITACIONES UNO</a></li>  
+              <li><a href="#"><i class="#"></i>HABITACIONES DOS</a></li> 
+              <li><a href="#"><i class="#"></i>HABITACIONES TRES</a></li> 
 
               </ul>       
         <!--fin: SUB MENU-->
@@ -88,164 +89,75 @@
 
 
 
-<!-- CONTENIDO UNO   SLICE IMAGENES -->
-<section>
-<div id="page-wrapper" data-scroll-index="0">
-  <div class="row">
-    <div class="col-lg-12">
-      <div id="Contenedor-Msg"></div><!--:CUADROS DE ALERTA-->
+<!-- CONTENIDO CENTRO--><section>
+
+<div id="page-wrapper"><div class="row"><div class="col-lg-12">
+<div id="Contenedor-Msg"></div><!--:CUADROS DE ALERTA-->
       
-      <section class="titulo">
-      <h2>SLICE</h2> 
-        <div class="row rowSeparaTop">
-        <div class="col-xs-8 col-sm-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">HOTEL
-            <div class="pull-right"></div>
-          </div>
-          <div class="panel-body">
+<section class="titulo">
+    <h2>HOTEL CODERHUSE</h2> 
+
         
 
-          </div><!-- /fin: panel-body-->
-        </div>
-        </div>
-      </section>
-    </div> <!--./ class="col-lg-12"    <div class="clearfix visible-xs"></div>row -->
-</div></div>
-</section><!-- fin:CONTENIDO UNO -->    
 
 
-<!-- CONTENIDO HABITACION UNO -->
-<section>
-<div id="page-wrapper" data-scroll-index="1">
-  <div class="row">
-    <div class="col-lg-12">
-      
-      <section class="titulo">
-      <h2>HABITACIONES UNO</h2> 
-        <div class="row rowSeparaTop">
-        <div class="col-xs-8 col-sm-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">HOTEL
-            <div class="pull-right"></div>
-          </div>
-          <div class="panel-body">
-        
+<div class="row rowSeparaTop">
 
-          </div><!-- /fin: panel-body-->
-        </div>
-        </div>
-      </section>
-    </div> 
-</div></div>
-</section><!-- fin:HABITACION UNO -->  
+  <div class="col-xs-8 col-sm-8">
+    <div class="panel panel-default">
+    <div class="panel-heading">HOTEL<div class="pull-right"><input id="txtId" class="form-control Dv" type="text"></div></div>
+    <div class="panel-body">
 
-<!-- CONTENIDO HABITACION DOS -->
-<section>
-<div id="page-wrapper" data-scroll-index="3">
-  <div class="row">
-    <div class="col-lg-12">
-      
-      <section class="titulo">
-      <h2>HABITACIONES DOS</h2> 
-        <div class="row rowSeparaTop">
-        <div class="col-xs-8 col-sm-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">HOTEL
-            <div class="pull-right"></div>
-          </div>
-          <div class="panel-body">
-        
 
-          </div><!-- /fin: panel-body-->
-        </div>
-        </div>
-      </section>
-    </div> <!--./ class="col-lg-12"-->
-</div></div>
-</section><!-- fin:HABITACION DOS--> 
 
-<!-- CONTENIDO HABITACION TRES -->
-<section>
-<div id="page-wrapper" data-scroll-index="3">
-  <div class="row">
-    <div class="col-lg-12">
-      
-      <section class="titulo">
-      <h2>HABITACIONES TRES</h2> 
-        <div class="row rowSeparaTop">
-        <div class="col-xs-8 col-sm-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">HOTEL
-            <div class="pull-right"></div>
-          </div>
-          <div class="panel-body">
-        
+    </div><!-- /fin: panel-body-->
+    </div>
+  </div>
 
-          </div><!-- /fin: panel-body-->
-        </div>
-        </div>
-      </section>
-    </div> <!--./ class="col-lg-12"-->
-</div></div>
-</section><!-- fin:HABITACION TRES-->  
 
-<!-- CONTENIDO HABITACION UBICACION -->
-<section>
-<div id="page-wrapper" data-scroll-index="3">
-  <div class="row">
-    <div class="col-lg-12">
-      
-      <section class="titulo">
-      <h2>UBICACION</h2> 
-        <div class="row rowSeparaTop">
-        <div class="col-xs-8 col-sm-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">HOTEL
-            <div class="pull-right"></div>
-          </div>
-          <div class="panel-body">
-        
+<!--   <div class="col-xs-6 col-sm-4" style="float:right;">
+    <div class="panel panel-success">
+        <div class="panel-heading">ACCESOS<div class="pull-right">aacac</div></div>
+        <div class="panel-body GrillaPeq">
+          <table id="TableForm" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td ><input id="txtConAcceso" class="form-control" type="text" placeholder="CON ACCESO"></td>
+            </tr>
+            <tr>
+              <td ><input id="txtUsuario" class="form-control" type="text" placeholder="Nombre Usuario"></td>
+            </tr>
+             <tr>
+              <td><input id="txtClave" class="form-control" type="text" placeholder="Clave Usuario"></td>
+            </tr>
+             <tr>
+              <td><div id="BotoneraForm"  class="btn-group "><button type="submit" class="btn btn-default Grabar"  onclick="javascript:GrabarSuc();">GRABAR ACCESO</button></div>
+              </td>
+            </tr>
+         
+            </table>
+</div>
+    </div>
+  
 
-          </div><!-- /fin: panel-body-->
-        </div>
-        </div>
-      </section>
-    </div> <!--./ class="col-lg-12"-->
-</div></div>
-</section><!-- fin:HABITACION UBICACION--> 
+  </div> -->
 
-<!-- CONTENIDO CONTACTENOS -->
-<section>
-<div id="page-wrapper" data-scroll-index="3">
-  <div class="row">
-    <div class="col-lg-12">
-      
-      <section class="titulo">
-      <h2>HCONTACTENOS</h2> 
-        <div class="row rowSeparaTop">
-        <div class="col-xs-8 col-sm-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">HOTEL
-            <div class="pull-right"></div>
-          </div>
-          <div class="panel-body">
-        
+    
 
-          </div><!-- /fin: panel-body-->
-        </div>
-        </div>
-      </section>
-    </div> <!--./ class="col-lg-12"-->
-</div></div>
-</section><!-- fin: CONTACTENOS-->  
+</div> <!-- ./ <div class="clearfix visible-xs"></div>row -->
+
+
+</section>
+</div></div></div>
+    
+
+
+</section><!-- fin:CENTRO -->
 
 </div><!-- /#wrapper -->
 
 
     <script src="binn/js/jquery-1.10.2.js"></script>
     <script src="binn/js/bootstrap.min.js"></script>
-    <script src="binn/js/scrollIt.min.js"></script>
     <script src="binn/js/hotel.js"></script><!-- js central -->
 </body>
 </html>
