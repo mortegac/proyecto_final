@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Coderhouse</title>
+    <link href="binn/css/stylehotel.css" rel="stylesheet"/> 
+
+</head>
+<body>
+
+  <!--  MODAL BUSCADOR 1-->
+  <div class="modal fade" id="miventana" style="display: none; width:100%;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content"  style="height:600px; overflow: scroll;">
+  <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  <!-- MODAL --><!-- fin:MODAL -->
+  </div>
+  <div class="modal-footer" style=" margin:0px;"><button type="button" class="btn btn-primary" data-dismiss="modal" >Cerrar</button></div>  
+  </div></div></div>
+  <!-- fin: MODAL BUSCADOR -->
+
+
+
+<div id="wrapper">
+
+<!--inicio: MENU TOP -->
+<nav class="navbar navbar-fixed-top navbarDEGRADADO" role="navigation">
+<!--inicio: navbar-header --> 
+ <div class="navbar-header"> <a class="navbar-brand" href="#"><img class="imgLogo" src="binn/images/logoPeq.png" width="177" height="51" longdesc="HOTEL-CODERHOUSE"></a>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Menu</span>
+      <span class="icon-bar"><i class="fa fa-bars"></i></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+  </div><!--fin: navbar-header -->
+ 
+ <!--inicio: MENU SISTEMA--> 
+<div class="collapse navbar-collapse navbar-inverse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.php">Inicio</a></li>
+      <!-- /.inicio: MENU -->
+          <li class="dropdown menutop">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="aa"></i>  NUESTRAS HABITACIONES<i class="fa fa-caret-down"></i>
+            </a>
+
+        <!--inicio: SUB MENU--><ul class="dropdown-menu dropdown-alerts">
+       <li class="divider"></li>   
+              <li><a href="#" data-scroll-nav="0"><i class="#"></i>HABITACIONES UNO</a></li>  
+              <li><a href="#" data-scroll-nav="1"><i class="#"></i>HABITACIONES DOS</a></li> 
+              <li><a href="#" data-scroll-nav="2"><i class="#"></i>HABITACIONES TRES</a></li> 
+
+              </ul>       
+        <!--fin: SUB MENU-->
+        </li>
+        <li class="dropdown menutop">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="aa"></i>  UBICACION<i class="fa fa-caret-down"></i>
+            </a>
+        </li>
+        <li class="dropdown menutop">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="aa"></i>  CONTACTANOS<i class="fa fa-caret-down"></i>
+            </a>
+        </li>
+
+
+      <!-- /.fin: MENU -->
+
+    </ul>
+</div><!--fin:    MENU SISTEMA -->   
+</nav><!--fin: MENU TOP -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTENIDO UNO   SLICE IMAGENES -->
+<section>
+<div id="page-wrapper" data-scroll-index="0">
+  <div class="row">
+    <div class="col-lg-12">
+      <div id="Contenedor-Msg"></div><!--:CUADROS DE ALERTA-->
+      
+      <section class="titulo">
+      <h2>SLICE</h2> 
+        <div class="row rowSeparaTop">
+        <div class="col-xs-8 col-sm-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">HOTEL
+            <div class="pull-right"></div>
+          </div>
+          <div class="panel-body">
+        
+
+          </div><!-- /fin: panel-body-->
+        </div>
+        </div>
+      </section>
+    </div> <!--./ class="col-lg-12"    <div class="clearfix visible-xs"></div>row -->
+</div></div>
+</section><!-- fin:CONTENIDO UNO -->    
+
+
+
+</div><!-- /#wrapper -->
+
+
+    <script src="binn/js/jquery-1.10.2.js"></script>
+    <script src="binn/js/bootstrap.min.js"></script>
+    <script src="binn/js/scrollIt.min.js"></script>
+    <script src="binn/js/hotel.js"></script><!-- js central -->
+</body>
+</html>
