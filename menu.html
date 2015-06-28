@@ -6,12 +6,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
         <link rel="stylesheet" href="binn/css/menustyle.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         
+        <section class="inicio">
+            <div class="menu-background">
+                <div class="container">
+                     <img src="binn/images/isologo.png" atl="Logo_Hotel">
+                     <ul class="menu">
+                         <li><a href="#">Inicio</a></li>
+                         <li><a href="#">Habitaciones</a></li>
+                         <li><a href="#">Ubicación</a></li>
+                         <li><a href="#">Contacto</a></li>
+                     </ul>
+                     <div class="menu-right">
+                            <div class="facebook">
+                                <div id="fb-root">
+                            </div>
+                            <script>
+                                (function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+                                fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>  
+                            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count">
+                            </div>
+                            </div>
+                            <div class="twitter">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="es">Twittear</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                            </script>
+                            </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+     <script type="text/javascript">
+     $(window).scroll(function() {
+        if ($(this).scrollTop() > 2){  
+            $('.menu-background').addClass("menu-background2");
+        }
+        else{
+            $('.menu-background').removeClass("menu-background2");
+            }
+        });
+     </script>
+
         <!--**************** MENU ****************-->
     
-        <div class="menu">
+       <!--  <div class="menu">
             <div class="container">
                 <div class="logo">
                     <a href="#">
@@ -56,7 +104,7 @@
                     </ul>
                 </div>
              </div>
-        </div>
+        </div> -->
     
     <!--**************** MENU ****************-->
 
