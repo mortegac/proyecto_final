@@ -13,15 +13,44 @@
         <section class="inicio">
             <div class="menu-background">
                 <div class="container">
-                     <img src="binn/images/isologo.png" atl="Logo_Hotel">
+                     <img src="binn/images/isologo2.png" class="header" atl="Logo_Hotel">
                      <ul class="menu">
                          <li><a href="#">Inicio</a></li>
                          <li><a href="#">Habitaciones</a></li>
                          <li><a href="#">Ubicación</a></li>
                          <li><a href="#">Contacto</a></li>
                      </ul>
+        <!-- Menu Responsive-->
+                    <div class="mobile-nav">
+                        <div class="menu-btn" id="menu-btn">
+                            <div></div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+         
+                        <div class="responsive-menu">
+                            <div class="menu-header">
+                                <ul>
+                                    <li>
+                                        <a href="#">Inicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Habitaciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ubicación</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        <!-- Fin Menu Responsive-->
                      <div class="menu-right">
-                            <div class="facebook">
+  <!-- Boton Facebook -->   <div class="facebook">
                                 <div id="fb-root">
                             </div>
                             <script>
@@ -35,79 +64,45 @@
                             </script>  
                             <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count">
                             </div>
-                            </div>
-                            <div class="twitter">
+<!-- Fin Boton Facebook --> </div>
+<!-- Boton Twitter -->      <div class="twitter">
                                 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="es">Twittear</a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
                             </script>
-                            </div>
+ <!-- Fin Boton Twitter --> </div>
                      </div>
                 </div>
             </div>
+            <div class="logo container">
+                <img src="binn/images/logohotel2.png">
+                <h1>Ven a disfrutar de la mejor <strong>experiencia</strong> en hoteles</h1>
+            </div>
         </section>
 
-     <script type="text/javascript">
-     $(window).scroll(function() {
-        if ($(this).scrollTop() > 2){  
-            $('.menu-background').addClass("menu-background2");
-        }
-        else{
-            $('.menu-background').removeClass("menu-background2");
-            }
-        });
-     </script>
+         <!-- Script Color Menu -->
+         <script type="text/javascript">
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 2){  
+                    $('.menu-background').addClass("menu-background2");
+                    $('span').css('background-color', 'black');
+                }
+                else{
+                    $('.menu-background').removeClass("menu-background2");
+                    $('span').css('background-color', 'white');
+                }
+            });
+         </script>
+         <!-- Script Color Menu -->
 
-        <!--**************** MENU ****************-->
-    
-       <!--  <div class="menu">
-            <div class="container">
-                <div class="logo">
-                    <a href="#">
-                        <img src="binn/images/logohotel.png" alt="Marca">
-                    </a>
-                </div>
-
-                <nav class="navbar navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a data-scroll-nav="0"> Inicio</a>
-                        </li>
-                        <li>
-                            <a data-scroll-nav="1"> Habitaciones</a>
-                        </li>
-                        <li>
-                            <a data-scroll-nav="2"> Ubicacición</a>
-                        </li>
-                        <li>
-                            <a data-scroll-nav="3"> Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="social">
-                     <ul class="social-header">
-                        <li>
-                            <a href="http://www.facebook.com" target="target_blank">
-                                <i class="fa fa-facebook fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com" target="_blank">
-                                <i class="fa fa-twitter fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://instagram.com/" target="_blank">
-                                <i class="fa fa-instagram fa-2x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-             </div>
-        </div> -->
-    
-    <!--**************** MENU ****************-->
-
+        <!-- Script Menu Responsive -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu-btn').click(function(){
+                    $(".responsive-menu").toggleClass("expand");
+                });
+            });
+        </script>
+        <!-- Fin Script Menu Responsive -->
 
 
 
