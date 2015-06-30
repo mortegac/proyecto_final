@@ -52,3 +52,86 @@
                     $(".responsive-menu").toggleClass("expand");
                 });
             });
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+    
+    $( "#frmBoton" ).click(function(e) { e.preventDefault();  Envio(); });
+    $( "input" ).focusout(function(e){ Valida(); });
+
+   // $('button').attr("disabled","disabled");
+   // $('#frmBoton').addClass( "frmBotonDisable" );
+
+
+
+ });
+
+
+
+function Valida(){
+   // alert("ENTRE A VALIDA");
+    // if ($(this).val().trim() === '') { 
+    //     $('button').attr("disabled","disabled");
+
+    //  }else{
+    //     var indice=0;
+    //     $( "input" ).each(function(){ //RECORRE TODOS LOS ELEMENTOS DE LA ETIQUETA
+            
+    //         if ($(this).val().trim() === '') {   
+    //             indice++;
+    //         }
+    //      });
+
+
+    //     if (indice > 0) {   
+    //             console.log("PASO VALIDACION");
+    //     }else{
+    //             console.log("error");
+    //             button.removeAttr("disabled");
+    //     }
+    // };
+
+
+};
+
+
+function Envio(){
+    
+    //alert("PRESIONES");       //previene la ejecusion del evento (osea el submit)
+    // var nom= $('#frmNombre').val();
+    // var ape= $('#frmEmail').val();
+    // var desc= $('#frmMsg').val();
+
+
+    // $('#nombre').focus();
+     
+
+    console.log("Hice clic");
+
+    params={};
+    params.action="env";
+    params.origen= "HOTEL CORONA";
+    params.emailorigen= "info@apgca.cl";
+    params.nombre= $("#frmNombre").val();
+    params.email= $("#frmEmail").val();
+    params.mensaje= $("#frmMsg").val();
+  
+    var post = $.post("process.php", params, siContacto, 'json'); 
+
+};
+
+function siContacto(r){
+console.log(JSON.stringify(r));
+
+};
+
