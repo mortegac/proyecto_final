@@ -1,7 +1,7 @@
 <?Php
 
 require_once 'binn/src/Mandrill.php';
-$mandrill = new Mandrill('VIjtOo4pVK04a5Hhk9LloQ');
+$mandrill = new Mandrill('KEY_API_MANDRIL');
 // send transactional email
 
 $_REQUEST['EmailFrom'] = 'info@apgca.cl';
